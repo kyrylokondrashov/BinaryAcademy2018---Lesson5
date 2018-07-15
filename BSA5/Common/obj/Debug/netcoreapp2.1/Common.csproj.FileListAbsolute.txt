@@ -1,0 +1,12 @@
+G:\BSA5\Common\obj\Debug\netcoreapp2.1\Common.csprojAssemblyReference.cache
+G:\BSA5\Common\obj\Debug\netcoreapp2.1\Common.csproj.CoreCompileInputs.cache
+G:\BSA5\Common\obj\Debug\netcoreapp2.1\Common.AssemblyInfoInputs.cache
+G:\BSA5\Common\obj\Debug\netcoreapp2.1\Common.AssemblyInfo.cs
+G:\BSA5\Common\bin\Debug\netcoreapp2.1\Common.deps.json
+G:\BSA5\Common\bin\Debug\netcoreapp2.1\Common.dll
+G:\BSA5\Common\bin\Debug\netcoreapp2.1\Common.pdb
+G:\BSA5\Common\bin\Debug\netcoreapp2.1\DAL_EF.dll
+G:\BSA5\Common\bin\Debug\netcoreapp2.1\DAL_EF.pdb
+G:\BSA5\Common\obj\Debug\netcoreapp2.1\Common.csproj.CopyComplete
+G:\BSA5\Common\obj\Debug\netcoreapp2.1\Common.dll
+G:\BSA5\Common\obj\Debug\netcoreapp2.1\Common.pdb

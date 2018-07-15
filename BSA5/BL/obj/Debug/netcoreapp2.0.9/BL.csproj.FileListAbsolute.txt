@@ -1,0 +1,14 @@
+G:\BSA5\BL\obj\Debug\netcoreapp2.0.9\BL.csprojAssemblyReference.cache
+G:\BSA5\BL\obj\Debug\netcoreapp2.0.9\BL.csproj.CoreCompileInputs.cache
+G:\BSA5\BL\obj\Debug\netcoreapp2.0.9\BL.AssemblyInfoInputs.cache
+G:\BSA5\BL\obj\Debug\netcoreapp2.0.9\BL.AssemblyInfo.cs
+G:\BSA5\BL\bin\Debug\netcoreapp2.0.9\BL.deps.json
+G:\BSA5\BL\bin\Debug\netcoreapp2.0.9\BL.dll
+G:\BSA5\BL\bin\Debug\netcoreapp2.0.9\BL.pdb
+G:\BSA5\BL\bin\Debug\netcoreapp2.0.9\Common.dll
+G:\BSA5\BL\bin\Debug\netcoreapp2.0.9\DAL_EF.dll
+G:\BSA5\BL\bin\Debug\netcoreapp2.0.9\Common.pdb
+G:\BSA5\BL\bin\Debug\netcoreapp2.0.9\DAL_EF.pdb
+G:\BSA5\BL\obj\Debug\netcoreapp2.0.9\BL.csproj.CopyComplete
+G:\BSA5\BL\obj\Debug\netcoreapp2.0.9\BL.dll
+G:\BSA5\BL\obj\Debug\netcoreapp2.0.9\BL.pdb

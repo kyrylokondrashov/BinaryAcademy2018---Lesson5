@@ -1,0 +1,11 @@
+G:\BSA5\DAL_EF\bin\Debug\netcoreapp2.0.9\DAL_EF.deps.json
+G:\BSA5\DAL_EF\bin\Debug\netcoreapp2.0.9\DAL_EF.dll
+G:\BSA5\DAL_EF\bin\Debug\netcoreapp2.0.9\DAL_EF.pdb
+G:\BSA5\DAL_EF\obj\Debug\netcoreapp2.0.9\DAL_EF.csproj.CoreCompileInputs.cache
+G:\BSA5\DAL_EF\obj\Debug\netcoreapp2.0.9\DAL_EF.AssemblyInfoInputs.cache
+G:\BSA5\DAL_EF\obj\Debug\netcoreapp2.0.9\DAL_EF.AssemblyInfo.cs
+G:\BSA5\DAL_EF\obj\Debug\netcoreapp2.0.9\DAL_EF.dll
+G:\BSA5\DAL_EF\obj\Debug\netcoreapp2.0.9\DAL_EF.pdb
+G:\BSA5\DAL_EF\bin\Debug\netcoreapp2.0.9\DAL_EF.runtimeconfig.json
+G:\BSA5\DAL_EF\bin\Debug\netcoreapp2.0.9\DAL_EF.runtimeconfig.dev.json
+G:\BSA5\DAL_EF\obj\Debug\netcoreapp2.0.9\DAL_EF.csprojAssemblyReference.cache
