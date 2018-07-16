@@ -9,7 +9,7 @@ namespace DAL_EF.Context
     {
         public AirportContext(DbContextOptions<AirportContext> options) : base(options)
         {
-
+           
 
         }
 
@@ -24,6 +24,8 @@ namespace DAL_EF.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+          //  modelBuilder.Entity<Crews>().HasOne(c => c.Pilot).WithOne(p => p.Id);
             base.OnModelCreating(modelBuilder);
        
 

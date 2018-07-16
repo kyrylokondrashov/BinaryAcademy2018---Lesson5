@@ -40,7 +40,7 @@ namespace PL
             services.AddTransient<IService<DeparturesDTO>, DeparturesServices>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddDbContext<AirportContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("AirportDatabase")));
+                    options.UseSqlServer(Configuration.GetConnectionString("b3")));
             services.AddMvc();
 
             Mapper.Initialize(cfg =>
@@ -54,13 +54,13 @@ namespace PL
                 cfg.CreateMap<PilotsDTO, Pilots>();
                 cfg.CreateMap<Pilots, PilotsDTO>();
 
-                cfg.CreateMap<StewardessesDTO, Stewardesses>();
+                cfg.CreateMap<StewardessesDTO, Stewardesses>().ForMember(x => x.Id, opt => opt.Ignore());
                 cfg.CreateMap<Stewardesses, StewardessesDTO>();
 
-                cfg.CreateMap<CrewsDTO, Crews>();
+                cfg.CreateMap<CrewsDTO, Crews>().ForMember(x => x.Id, opt => opt.Ignore());
                 cfg.CreateMap<Crews, CrewsDTO>();
 
-                cfg.CreateMap<AircraftsModelsDTO, AircraftsModels>();
+                cfg.CreateMap<AircraftsModelsDTO, AircraftsModels>().ForMember(x => x.Id, opt => opt.Ignore());
                 cfg.CreateMap<AircraftsModels, AircraftsModelsDTO>();
 
                 cfg.CreateMap<DeparturesDTO, Departures>();

@@ -18,7 +18,7 @@ namespace BL.Services
 
         public void Create(TicketsDTO item) // add validator
         {
-            var ticket = unitOfWork.TicketsRepository.GetById(item.Id);
+            var ticket = unitOfWork.TicketsRepository.GetById(item.Tid);
             if(ticket == null)
             {
                 var newTicket = Mapper.Map<TicketsDTO, Tickets>(item);
@@ -26,7 +26,7 @@ namespace BL.Services
             }
             else
             {
-                throw new Exception($"Ticket with this id {item.Id} has already been created");  
+                throw new Exception($"Ticket with this id {item.Tid} has already been created");  
             }
         }
 

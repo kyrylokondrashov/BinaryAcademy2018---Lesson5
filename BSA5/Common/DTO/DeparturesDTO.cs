@@ -4,11 +4,11 @@ namespace Common.DTO
 {
     public class DeparturesDTO
     {
-        public int Id { get; set; }
+        public int Did { get; set; }
 
-        public int Flight { get; set; }
+        public FlightsDTO Flight { get; set; }
         public DateTime DepartureDate { get; set; }
-        public int Crew { get; set; }
-        public int Aircraft { get; set; }
+        public CrewsDTO Crew { get; set; }
+        public AircraftsDTO Aircraft { get; set; }
     }
 }

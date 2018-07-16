@@ -6,7 +6,7 @@ namespace Common.DTO
 {
     public class AircraftsDTO
     {
-        public int Id { get; set; }
+        public int Aid { get; set; }
 
         public string AircraftName { get; set; }
         public AircraftsModels AircraftsModels { get; set; }

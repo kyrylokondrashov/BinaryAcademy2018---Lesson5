@@ -1,14 +1,16 @@
 ﻿using DAL_EF.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+
 namespace Common.DTO
 {
     public class CrewsDTO
     {
-        public int Id { get; set; }
+        public int Cid { get; set; }
 
-        public Pilots Pilot { get; set; }
+        public PilotsDTO Pilot { get; set; }
 
-        public List<Stewardesses> StewardessList { get; set; }
+        public List<StewardessesDTO> StewardessList { get; set; }
     }
 }

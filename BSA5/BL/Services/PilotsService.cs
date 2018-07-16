@@ -18,7 +18,7 @@ namespace BL.Services
 
         public void Create(PilotsDTO item)
         {
-            var pilots = unitOfWork.PilotsRepository.GetById(item.Id);
+            var pilots = unitOfWork.PilotsRepository.GetById(Convert.ToInt32(item.Pid));
             if (pilots == null)
             {
 
@@ -27,7 +27,7 @@ namespace BL.Services
             }
             else
             {
-                throw new Exception($"Pilot with this id {item.Id} has already been created");
+                throw new Exception($"Pilot with this id {item.Pid} has already been created");
             }
         }
 

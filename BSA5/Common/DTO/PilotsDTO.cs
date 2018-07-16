@@ -3,7 +3,7 @@ namespace Common.DTO
 {
     public class PilotsDTO
     {
-        public int Id { get; set; }
+        public int Pid { get; set; }
 
         public string Name { get; set; }
         public string Surname { get; set; }

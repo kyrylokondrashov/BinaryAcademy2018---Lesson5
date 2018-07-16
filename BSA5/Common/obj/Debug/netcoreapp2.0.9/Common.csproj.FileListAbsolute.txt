@@ -10,3 +10,17 @@ G:\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.AssemblyInfo.cs
 G:\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.csproj.CopyComplete
 G:\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.dll
 G:\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.pdb
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\bin\Debug\netcoreapp2.0.9\Common.deps.json
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\bin\Debug\netcoreapp2.0.9\Common.dll
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\bin\Debug\netcoreapp2.0.9\Common.pdb
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\bin\Debug\netcoreapp2.0.9\DAL_EF.dll
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\bin\Debug\netcoreapp2.0.9\DAL_EF.pdb
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.csprojAssemblyReference.cache
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.AssemblyInfo.cs
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.csproj.CopyComplete
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.dll
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\obj\Debug\netcoreapp2.0.9\Common.pdb
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\bin\Debug\netcoreapp2.0.9\Common.runtimeconfig.json
+C:\Users\User\Desktop\BinaryAcademy2018---Lesson5-master\BSA5\Common\bin\Debug\netcoreapp2.0.9\Common.runtimeconfig.dev.json

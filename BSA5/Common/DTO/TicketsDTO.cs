@@ -4,7 +4,7 @@ namespace Common.DTO
 {
     public class TicketsDTO
     {
-        public int Id { get; set; }
+        public int Tid { get; set; }
         public int Price { get; set; }
         public Flights Flight { get; set; }
     }

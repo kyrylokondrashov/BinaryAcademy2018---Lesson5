@@ -18,7 +18,7 @@ namespace BL.Services
 
         public void Create(StewardessesDTO item)
         {
-            var stewardesses = unitOfWork.StewardessesRepository.GetById(item.Id);
+            var stewardesses = unitOfWork.StewardessesRepository.GetById(item.Sid);
             if (stewardesses == null)
             {
                 var newStewardess = Mapper.Map<StewardessesDTO, Stewardesses>(item);
@@ -26,7 +26,7 @@ namespace BL.Services
             }
             else
             {
-                throw new Exception($"Stewardess with this id {item.Id} has already been created");
+                throw new Exception($"Stewardess with this id {item.Sid} has already been created");
             }
         }
 

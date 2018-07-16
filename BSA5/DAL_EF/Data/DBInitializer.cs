@@ -17,12 +17,12 @@ namespace DAL_EF.Data
 
             var stewardesses = new List<Stewardesses>
        {
-                new Stewardesses{ Name= "Alica", Surname="Alison", DateOfBirth = new DateTime(1990,09,12,12,13,14)},
-                new Stewardesses{ Name= "Rosa", Surname="Rosason", DateOfBirth = new DateTime(1990,09,13,12,13,14)},
-                new Stewardesses{ Name= "Eva", Surname="Evason", DateOfBirth = new DateTime(1990,09,12,14,13,14)},
-                new Stewardesses{ Name= "Jenn", Surname="Jennson", DateOfBirth = new DateTime(1990,09,15,12,13,14)},
-                new Stewardesses{ Name= "Hermy", Surname="Hermyson", DateOfBirth = new DateTime(1990,09,16,12,13,14)},
-                new Stewardesses{ Name= "Alica", Surname="Evason", DateOfBirth = new DateTime(1990,09,12,17,13,14)}
+                new Stewardesses{ Sid = 1, Name= "Alica", Surname="Alison", DateOfBirth = new DateTime(1990,09,12,12,13,14)},
+                new Stewardesses{ Sid = 2, Name= "Rosa", Surname="Rosason", DateOfBirth = new DateTime(1990,09,13,12,13,14)},
+                new Stewardesses{  Sid = 3,Name= "Eva", Surname="Evason", DateOfBirth = new DateTime(1990,09,12,14,13,14)},
+                new Stewardesses{  Sid = 4,Name= "Jenn", Surname="Jennson", DateOfBirth = new DateTime(1990,09,15,12,13,14)},
+                new Stewardesses{ Sid=5, Name= "Hermy", Surname="Hermyson", DateOfBirth = new DateTime(1990,09,16,12,13,14)},
+                new Stewardesses{ Sid = 6, Name= "Alica", Surname="Evason", DateOfBirth = new DateTime(1990,09,12,17,13,14)}
        };
 
 
@@ -38,10 +38,10 @@ namespace DAL_EF.Data
 
             var pilots = new Pilots[]
             {
-                new Pilots{ Name="Henry", Surname="Henryson",DateOfBirth = new DateTime(1980,09,12,12,13,14), Experience = 10},
-                new Pilots{ Name="Andrew", Surname="Andrewson",DateOfBirth = new DateTime(1980,09,13,12,13,14), Experience = 11},
-                new Pilots{ Name="Jonh", Surname="Jonhson",DateOfBirth = new DateTime(1980,09,12,14,13,14), Experience = 12},
-                new Pilots{ Name="Harry", Surname="Harryson",DateOfBirth = new DateTime(1980,09,15,12,13,14), Experience = 13}
+                new Pilots{ Pid =1 ,Name="Henry", Surname="Henryson",DateOfBirth = new DateTime(1980,09,12,12,13,14), Experience = 10},
+                new Pilots{ Pid=2 ,Name="Andrew", Surname="Andrewson",DateOfBirth = new DateTime(1980,09,13,12,13,14), Experience = 11},
+                new Pilots{ Pid =3 ,Name="Jonh", Surname="Jonhson",DateOfBirth = new DateTime(1980,09,12,14,13,14), Experience = 12},
+                new Pilots{ Pid= 4, Name="Harry", Surname="Harryson",DateOfBirth = new DateTime(1980,09,15,12,13,14), Experience = 13}
             };
 
             if (!airportDbContext.PilotsList.Any())
@@ -54,10 +54,10 @@ namespace DAL_EF.Data
 
             var crews = new Crews[]
             {
-                new Crews {Pilot = pilots[0],StewardessList = new List<Stewardesses>{stewardesses[0],stewardesses[1]}},
-                new Crews {Pilot = pilots[1],StewardessList = new List<Stewardesses>{stewardesses[2]}},
-                new Crews {Pilot = pilots[2],StewardessList = new List<Stewardesses>{stewardesses[3], stewardesses[4]}},
-                new Crews {Pilot = pilots[3],StewardessList = new List<Stewardesses>{stewardesses[5]}},
+                new Crews {Cid =1 ,Pilot = pilots[0],StewardessList = new List<Stewardesses>{stewardesses[0],stewardesses[1]}},
+                new Crews {Cid =2 ,Pilot = pilots[1],StewardessList = new List<Stewardesses>{stewardesses[2]}},
+                new Crews {Cid = 3,Pilot = pilots[2],StewardessList = new List<Stewardesses>{stewardesses[3], stewardesses[4]}},
+                new Crews {Cid = 4, Pilot = pilots[3],StewardessList = new List<Stewardesses>{stewardesses[5]}},
             };
 
             if (!airportDbContext.CrewsList.Any())

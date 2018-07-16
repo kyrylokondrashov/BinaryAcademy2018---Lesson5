@@ -18,7 +18,7 @@ namespace BL.Services
 
         public void Create(CrewsDTO item)
         {
-            var crews = unitOfWork.CrewsRepository.GetById(item.Id);
+            var crews = unitOfWork.CrewsRepository.GetById(item.Cid);
             if (crews == null)
             {
                 var newPilot = Mapper.Map<CrewsDTO, Crews>(item);
@@ -26,7 +26,7 @@ namespace BL.Services
             }
             else
             {
-                throw new Exception($"Crews with this id {item.Id} has already been created");
+                throw new Exception($"Crews with this id {item.Cid} has already been created");
             }
         }
 
@@ -71,15 +71,10 @@ namespace BL.Services
         public void Update(int id, CrewsDTO item)
         {
             var crews = unitOfWork.CrewsRepository.GetById(id);
-            if (crews != null)
-            {
+           
                 var newTicket = Mapper.Map<CrewsDTO, Crews>(item);
                 unitOfWork.CrewsRepository.Update(id, newTicket);
-            }
-            else
-            {
-                throw new Exception($"Crews with this id {id} has not been created");
-            }
+       
         }
     }
 

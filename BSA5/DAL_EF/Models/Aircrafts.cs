@@ -10,6 +10,7 @@ namespace DAL_EF.Models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        public int Aid { get; set; }
         public string AircraftName { get; set; }
         public AircraftsModels AircraftsModels { get; set; }
         public DateTime AircraftBuildDate { get; set; }

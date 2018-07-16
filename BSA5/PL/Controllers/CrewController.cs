@@ -28,27 +28,19 @@ namespace PL.Controllers
 
         // GET: /crew
         [HttpGet]
-        public string Get()
+        public List<CrewsDTO> Get()
         {
             var list = crewService.GetAll();
-            string res = JsonConvert.SerializeObject(list);
-            return res;
+            return list;
         }
 
         //GET: /crew/:id
         [HttpGet("{id}")]
-        public string Get(int id)
+        public CrewsDTO Get(int id)
         {
-            try
-            {
-                var crew = crewService.GetById(id);
-                string res = JsonConvert.SerializeObject(crew);
-                return res;
-            }
-            catch (Exception e)
-            {
-                return e.Message;
-            }
+            
+            var crew = crewService.GetById(id);
+            return crew;
 
         }
 

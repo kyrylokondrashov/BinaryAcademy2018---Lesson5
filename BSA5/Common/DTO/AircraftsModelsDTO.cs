@@ -3,7 +3,7 @@ namespace Common.DTO
 {
     public class AircraftsModelsDTO
     {
-        public int Id { get; set; }
+        public int AMid { get; set; }
 
         public string ModelName { get; set; }
         public int PlacesCount { get; set; }

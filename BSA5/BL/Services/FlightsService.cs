@@ -18,7 +18,7 @@ namespace BL.Services
 
         public void Create(FlightsDTO item)
         {
-            var flights = unitOfWork.FlightsRepository.GetById(item.Id);
+            var flights = unitOfWork.FlightsRepository.GetById(item.Fid);
             if (flights == null)
             {
                 var newPilot = Mapper.Map<FlightsDTO, Flights>(item);
@@ -26,7 +26,7 @@ namespace BL.Services
             }
             else
             {
-                throw new Exception($"Flights with this id {item.Id} has already been created");
+                throw new Exception($"Flights with this id {item.Fid} has already been created");
             }
         }
 
