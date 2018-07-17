@@ -74,7 +74,6 @@ namespace DAL_EF.Repositories
                 a.Cid = item.Cid;
                 a.Pilot = p;
 
-                //TODO Make a Cascade updating of Stewardesses
                 a.StewardessList = null;
                 List<Stewardesses> newList = new List<Stewardesses>();
                 foreach(var s in item.StewardessList)

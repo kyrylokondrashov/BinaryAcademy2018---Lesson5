@@ -38,20 +38,38 @@ namespace DAL_EF.Repositories
 
         public List<Flights> GetAll()
         {
-            return dataSource.FlightsList.ToList();
+            var t = dataSource.FlightsList.ToList();
+            foreach(var t1 in t)
+            {
+                dataSource.Entry(t1).Collection(x => x.Tickets).Load();
+            }
+            return t;
         }
 
         public Flights GetById(int id)
         {
-            var item = dataSource.FlightsList.Where(f => f.Id == id).FirstOrDefault();
-            return item;
+            var t = dataSource.FlightsList.Where(a => a.Fid == id).FirstOrDefault();
+            if (t != null)
+            {
+                dataSource.Entry(t).Collection(x => x.Tickets).Load();
+            }
+            return t;
         }
 
         public void Update(int id, Flights item)
         {
-            var temp = dataSource.FlightsList.Where(f => f.Id == id).FirstOrDefault();
-            dataSource.FlightsList.Remove(temp);
-            dataSource.FlightsList.Add(item);
+            var a = dataSource.FlightsList.Where(f => f.Fid == id).FirstOrDefault();
+
+            dataSource.Entry(a).Collection(x => x.Tickets).Load();
+            a.Tickets = null;
+            List<Tickets> newList = new List<Tickets>();
+            foreach (var s in item.Tickets)
+            {
+                var t = dataSource.TicketsList.Where(ss => ss.Tid == s.Tid).ToList().FirstOrDefault();
+                newList.Add(t);
+
+            }
+            a.Tickets = new List<Tickets>(newList);
             dataSource.SaveChanges();
         }
     }

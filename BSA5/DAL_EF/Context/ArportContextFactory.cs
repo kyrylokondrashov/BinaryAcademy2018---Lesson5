@@ -11,7 +11,7 @@ namespace DAL_EF.Context
         public AirportContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<AirportContext>();
-            optionsBuilder.UseSqlServer("Data Source=b6");
+            optionsBuilder.UseSqlServer("Data Source=a1");
 
             return new AirportContext(optionsBuilder.Options);
         }

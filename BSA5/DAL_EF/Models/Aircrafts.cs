@@ -15,6 +15,5 @@ namespace DAL_EF.Models
         public AircraftsModels AircraftsModels { get; set; }
         public DateTime AircraftBuildDate { get; set; }
         public long AircraftExpluatationSpan { get; set; }
-        public List<Tickets> Tickets { get; set; }
     }
 }

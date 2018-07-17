@@ -71,10 +71,10 @@ namespace DAL_EF.Data
 
             var aircraftsModels = new List<AircraftsModels>
             {
-                new AircraftsModels{ ModelName="Antonov-111", AircraftTonnage=1000, PlacesCount=500},
-                new AircraftsModels{ ModelName="Ruslanov-222", AircraftTonnage=1200, PlacesCount=600},
-                new AircraftsModels{ ModelName="Karasov-333", AircraftTonnage=1400, PlacesCount=700},
-                new AircraftsModels{ ModelName="Menesov-444", AircraftTonnage=1600, PlacesCount=800}
+                new AircraftsModels{AMid =1 , ModelName="Antonov-111", AircraftTonnage=1000, PlacesCount=500},
+                new AircraftsModels{AMid = 2, ModelName="Ruslanov-222", AircraftTonnage=1200, PlacesCount=600},
+                new AircraftsModels{AMid = 3, ModelName="Karasov-333", AircraftTonnage=1400, PlacesCount=700},
+                new AircraftsModels{AMid = 4, ModelName="Menesov-444", AircraftTonnage=1600, PlacesCount=800}
             };
 
             if (!airportDbContext.AircraftsModelsList.Any())
@@ -88,10 +88,10 @@ namespace DAL_EF.Data
 
             var aircrafts = new List<Aircrafts>
             {
-                new Aircrafts{AircraftName="Tyt101", AircraftBuildDate=new DateTime(2000,10,12,15,18,10), AircraftsModels = aircraftsModels[0], AircraftExpluatationSpan= new TimeSpan(500,0,0).Ticks},
-                new Aircrafts{ AircraftName="Ty202", AircraftBuildDate=new DateTime(2001,10,12,15,18,10), AircraftsModels = aircraftsModels[1], AircraftExpluatationSpan= new TimeSpan(600,0,0).Ticks},
-                new Aircrafts{ AircraftName="Ty303", AircraftBuildDate=new DateTime(1999,10,12,15,18,10), AircraftsModels = aircraftsModels[2], AircraftExpluatationSpan= new TimeSpan(700,0,0).Ticks},
-                new Aircrafts{ AircraftName="Ty404", AircraftBuildDate=new DateTime(1998,10,12,15,18,10), AircraftsModels = aircraftsModels[3], AircraftExpluatationSpan= new TimeSpan(800,0,0).Ticks}
+                new Aircrafts{Aid =1 ,AircraftName="Tyt101", AircraftBuildDate=new DateTime(2000,10,12,15,18,10), AircraftsModels = aircraftsModels[0], AircraftExpluatationSpan= new TimeSpan(500,0,0).Ticks},
+                new Aircrafts{Aid =2, AircraftName="Ty202", AircraftBuildDate=new DateTime(2001,10,12,15,18,10), AircraftsModels = aircraftsModels[1], AircraftExpluatationSpan= new TimeSpan(600,0,0).Ticks},
+                new Aircrafts{Aid =3, AircraftName="Ty303", AircraftBuildDate=new DateTime(1999,10,12,15,18,10), AircraftsModels = aircraftsModels[2], AircraftExpluatationSpan= new TimeSpan(700,0,0).Ticks},
+                new Aircrafts{Aid = 4, AircraftName="Ty404", AircraftBuildDate=new DateTime(1998,10,12,15,18,10), AircraftsModels = aircraftsModels[3], AircraftExpluatationSpan= new TimeSpan(800,0,0).Ticks}
             };
 
             if (!airportDbContext.AircraftsList.Any())
@@ -103,14 +103,14 @@ namespace DAL_EF.Data
             }
 
             var tickets = new Tickets[]{
-                new Tickets{ Price= 100, Flight= null},
-                new Tickets{ Price= 100, Flight= null},
-                new Tickets{ Price= 101, Flight= null},
-                new Tickets{ Price= 101, Flight= null},
-                new Tickets{ Price= 102, Flight= null},
-                new Tickets{ Price= 102, Flight= null},
-                new Tickets{Price= 103, Flight= null},
-                new Tickets{ Price= 103, Flight= null}
+                new Tickets{ Tid=1,Price= 100 },
+                new Tickets{ Tid=2,Price= 100},
+                new Tickets{ Tid=3,Price= 101},
+                new Tickets{ Tid =4,Price= 10},
+                new Tickets{ Tid =5,Price= 102 },
+                new Tickets{ Tid = 6,Price= 10},
+                new Tickets{ Tid = 7,Price= 103},
+                new Tickets{ Tid = 8, Price= 103}
             };
 
 
@@ -125,10 +125,10 @@ namespace DAL_EF.Data
 
 
             var flights = new List<Flights> {
-                new Flights {PointOfDepartures="kiev/zhulyany",  TimeOfDeparture =new DateTime(2018,10,12,15,18,10), PointOfDestination = "london/hitrow",TimeOfArrival=new DateTime(2018,10,13,15,18,10),Tickets=new List<Tickets>{ tickets[0], tickets[1]} },
-                new Flights {PointOfDepartures="kiev/zhulyany", TimeOfDeparture = new DateTime(2018,10,13,16,19,10), PointOfDestination  ="tokio/haneda", TimeOfArrival = new DateTime(2018,10,14,15,18,10),Tickets=new List<Tickets>{ tickets[2], tickets[3]}},
-                new Flights {PointOfDepartures="kiev/zhulyany", TimeOfDeparture = new DateTime(2018,10,14,17,20,10), PointOfDestination  ="hong-kong/hka", TimeOfArrival = new DateTime(2018,10,15,15,18,10),Tickets=new List<Tickets>{ tickets[4], tickets[5] }},
-                new Flights {PointOfDepartures="kiev/zhulyany", TimeOfDeparture = new DateTime(2018,10,15,18,21,10), PointOfDestination = "new-york/nwa", TimeOfArrival = new DateTime(2018,10,16,15,18,10),Tickets=new List<Tickets>{tickets[6], tickets[7]}}
+                new Flights {Fid = 1, PointOfDepartures="kiev/zhulyany",  TimeOfDeparture =new DateTime(2018,10,12,15,18,10), PointOfDestination = "london/hitrow",TimeOfArrival=new DateTime(2018,10,13,15,18,10),Tickets=new List<Tickets>{ tickets[0], tickets[1]} },
+                new Flights {Fid = 2,PointOfDepartures="kiev/zhulyany", TimeOfDeparture = new DateTime(2018,10,13,16,19,10), PointOfDestination  ="tokio/haneda", TimeOfArrival = new DateTime(2018,10,14,15,18,10),Tickets=new List<Tickets>{ tickets[2], tickets[3]}},
+                new Flights {Fid = 3, PointOfDepartures="kiev/zhulyany", TimeOfDeparture = new DateTime(2018,10,14,17,20,10), PointOfDestination  ="hong-kong/hka", TimeOfArrival = new DateTime(2018,10,15,15,18,10),Tickets=new List<Tickets>{ tickets[4], tickets[5] }},
+                new Flights {Fid = 4,PointOfDepartures="kiev/zhulyany", TimeOfDeparture = new DateTime(2018,10,15,18,21,10), PointOfDestination = "new-york/nwa", TimeOfArrival = new DateTime(2018,10,16,15,18,10),Tickets=new List<Tickets>{tickets[6], tickets[7]}}
                 };
 
 
@@ -144,10 +144,10 @@ namespace DAL_EF.Data
 
             var departures = new List<Departures> {
 
-                new Departures{ Flight =flights[0], DepartureDate=new DateTime(2018,10,12,15,18,10), Crew = crews[0], Aircraft=aircrafts[0] },
-                new Departures{ Flight =flights[1], DepartureDate=new DateTime(2018,10,13,15,18,10), Crew = crews[1], Aircraft=aircrafts[0] },
-                new Departures{ Flight =flights[2], DepartureDate=new DateTime(2018,10,14,15,18,10), Crew = crews[2], Aircraft=aircrafts[0] },
-                new Departures{ Flight =flights[3], DepartureDate=new DateTime(2018,10,15,15,18,10), Crew = crews[3], Aircraft=aircrafts[0] }
+                new Departures{ Did= 1,Flight =flights[0], DepartureDate=new DateTime(2018,10,12,15,18,10), Crew = crews[0], Aircraft=aircrafts[0] },
+                new Departures{Did =2 , Flight =flights[1], DepartureDate=new DateTime(2018,10,13,15,18,10), Crew = crews[1], Aircraft=aircrafts[0] },
+                new Departures{Did = 3, Flight =flights[2], DepartureDate=new DateTime(2018,10,14,15,18,10), Crew = crews[2], Aircraft=aircrafts[0] },
+                new Departures{Did = 4, Flight =flights[3], DepartureDate=new DateTime(2018,10,15,15,18,10), Crew = crews[3], Aircraft=aircrafts[0] }
                 };
 
 

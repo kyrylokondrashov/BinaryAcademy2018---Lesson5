@@ -28,11 +28,10 @@ namespace PL.Controllers
 
         // GET: /flights
         [HttpGet]
-        public string Get()
+        public List<FlightsDTO> Get()
         {
             var list = flightService.GetAll();
-            string res = JsonConvert.SerializeObject(list);
-            return res;
+            return list;
         }
 
         //GET: /flights/:id

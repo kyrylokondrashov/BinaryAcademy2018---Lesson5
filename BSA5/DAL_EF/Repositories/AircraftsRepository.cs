@@ -23,7 +23,7 @@ namespace DAL_EF.Repositories
 
         public void Delete(int id)
         {
-            var aircraft = dataSource.AircraftsList.Where(a => a.Id == id).FirstOrDefault();
+            var aircraft = dataSource.AircraftsList.Where(a => a.Aid == id).FirstOrDefault();
             dataSource.AircraftsList.Remove(aircraft);
             dataSource.SaveChanges();
         }
@@ -38,21 +38,28 @@ namespace DAL_EF.Repositories
 
         public List<Aircrafts> GetAll()
         {
-            return dataSource.AircraftsList.ToList();
+           var all = dataSource.AircraftsList.ToList();
+            foreach(var t in all)
+            {
+                dataSource.Entry(t).Reference(x => x.AircraftsModels).Load();
+            }
+            return all;
         }
 
         public Aircrafts GetById(int id)
         {
-            return dataSource.AircraftsList.Where(a => a.Id == id).FirstOrDefault();
+            var t =  dataSource.AircraftsList.Where(a => a.Aid == id).FirstOrDefault();
+            dataSource.Entry(t).Reference(x => x.AircraftsModels).Load();
+            return t;
         }
 
         public void Update(int id, Aircrafts item)
         {
-            var aircraft = dataSource.AircraftsList.Where(acr => acr.Id == id).FirstOrDefault();
-            dataSource.AircraftsList.Remove(aircraft);
-            dataSource.AircraftsList.Add(item);
+            var a = dataSource.AircraftsList.Where(acr => acr.Aid == id).FirstOrDefault();
+            var am = dataSource.AircraftsModelsList.Where(ams => ams.AMid == item.AircraftsModels.AMid).ToList().FirstOrDefault();
+            a.AircraftsModels = am;
+            a = item;
             dataSource.SaveChanges();
-
         }
     }
 }

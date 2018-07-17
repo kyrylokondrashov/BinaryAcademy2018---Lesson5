@@ -6,6 +6,6 @@ namespace Common.DTO
     {
         public int Tid { get; set; }
         public int Price { get; set; }
-        public Flights Flight { get; set; }
+
     }
 }

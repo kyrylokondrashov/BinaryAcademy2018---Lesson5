@@ -9,9 +9,9 @@ namespace Common.DTO
         public int Aid { get; set; }
 
         public string AircraftName { get; set; }
-        public AircraftsModels AircraftsModels { get; set; }
+        public AircraftsModelsDTO AircraftsModels { get; set; }
         public DateTime AircraftBuildDate { get; set; }
         public long AircraftExpluatationSpan { get; set; }
-        public List<Tickets> Tickets { get; set; }
+
     }
 }
